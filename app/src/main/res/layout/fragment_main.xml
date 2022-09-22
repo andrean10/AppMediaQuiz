@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.main.MainFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ki_kd"
+        style="@style/PrimaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_menu"
+        android:text="KI KD"
+        android:textSize="32sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/gd_menu_horizontal2"
+        app:layout_constraintEnd_toStartOf="@+id/gd_menu_vertical2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gd_menu_vertical"
+        app:layout_constraintTop_toTopOf="@+id/gd_menu_horizontal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_materi"
+        style="@style/PrimaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_menu"
+        android:text="Materi"
+        android:textSize="32sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/gd_menu_horizontal2"
+        app:layout_constraintEnd_toStartOf="@+id/gd_menu_vertical3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gd_menu_vertical2"
+        app:layout_constraintTop_toTopOf="@+id/btn_ki_kd" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_petunjuk"
+        style="@style/PrimaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_menu"
+        android:text="Petunjuk"
+        android:textSize="32sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/gd_menu_horizontal2"
+        app:layout_constraintEnd_toStartOf="@+id/gd_menu_vertical4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gd_menu_vertical3"
+        app:layout_constraintTop_toTopOf="@+id/btn_ki_kd" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_game"
+        style="@style/PrimaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_menu"
+        android:text="Game"
+        android:textSize="32sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/gd_menu_horizontal3"
+        app:layout_constraintEnd_toStartOf="@+id/gd_menu_vertical2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/gd_menu_vertical"
+        app:layout_constraintTop_toTopOf="@+id/gd_menu_horizontal2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_quiz"
+        style="@style/PrimaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_menu"
+        android:text="Quiz"
+        android:textSize="32sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/gd_menu_horizontal3"
+        app:layout_constraintEnd_toStartOf="@+id/gd_menu_vertical3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gd_menu_vertical2"
+        app:layout_constraintTop_toTopOf="@+id/gd_menu_horizontal2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_menu_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_menu_vertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_menu_vertical3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_menu_vertical4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_menu_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_menu_horizontal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_menu_horizontal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
